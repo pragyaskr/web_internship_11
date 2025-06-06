@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Array map()</title>
+</head>
+<body>
+  <h2>Array map()</h2>
+  <div id="output"></div>
+  <script>
+    let nums = [1, 2, 3, 4];
+    let squares = nums.map(function(n) {
+      return n * n;
+    });
+    document.getElementById("output").innerHTML =
+      "Original: " + nums.join(", ") + "<br>" +
+      "Squares: " + squares.join(", ");
+  </script>
+</body>
+</html>

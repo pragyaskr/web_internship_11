@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Array forEach()</title>
+</head>
+<body>
+  <h2>Array forEach()</h2>
+  <div id="output"></div>
+  <script>
+    let colors = ["Red", "Green", "Blue"];
+    let text = "";
+    colors.forEach(function(color, idx) {
+      text += (idx + 1) + ". " + color + "<br>";
+    });
+    document.getElementById("output").innerHTML = text;
+  </script>
+</body>
+</html>

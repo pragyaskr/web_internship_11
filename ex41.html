@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Array push & pop</title>
+</head>
+<body>
+  <h2>Array push() and pop()</h2>
+  <div id="output"></div>
+  <script>
+    let fruits = ["Apple", "Banana"];
+    fruits.push("Orange"); // Add to end
+    let removed = fruits.pop(); // Remove from end
+    document.getElementById("output").innerHTML =
+      "After push: Apple, Banana, Orange<br>" +
+      "After pop: " + fruits.join(", ") + "<br>" +
+      "Removed: " + removed;
+  </script>
+</body>
+</html>

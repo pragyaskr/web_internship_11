@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Array filter()</title>
+</head>
+<body>
+  <h2>Array filter()</h2>
+  <div id="output"></div>
+  <script>
+    let nums = [5, 12, 8, 130, 44];
+    let bigNums = nums.filter(function(n) {
+      return n > 10;
+    });
+    document.getElementById("output").innerHTML =
+      "Original: " + nums.join(", ") + "<br>" +
+      "Filtered (>10): " + bigNums.join(", ");
+  </script>
+</body>
+</html>
